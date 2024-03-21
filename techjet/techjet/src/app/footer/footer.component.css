@@ -1,0 +1,53 @@
+/* Add these styles to your existing CSS or create a new CSS file for the footer */
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer h4 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.social-links {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icon {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #00bcd4;
+}
+
+.input-group {
+  width: 100%;
+}
+
+.input-group input {
+  border-radius: 0;
+  border-color: #fff;
+}
+
+.input-group button {
+  border-radius: 0;
+  background-color: #00bcd4;
+  color: #fff;
+  border-color: #00bcd4;
+}
+
+.input-group button:hover {
+  background-color: #fff;
+  color: #00bcd4;
+}

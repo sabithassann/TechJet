@@ -1,0 +1,93 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container-fluid"> <!--for logo on the left side -->
+     <!-- Logo -->
+     <a class="navbar-brand" href="#">
+       <img src="assets/logo.svg" alt="Logo" width="80" height="auto">
+     </a>
+ 
+     <!-- Toggler for smaller screens -->
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+       <span class="navbar-toggler-icon"></span>
+     </button>
+ 
+     <!-- Navbar Links -->
+     <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+       <ul class="navbar-nav">
+         <li class="nav-item dropdown" (mouseenter)="onMouseEnter()" (mouseleave)="onMouseLeave()">
+           <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+             Categories 
+           </a>
+           <ul class="dropdown-menu" [class.show]="showDropdown" aria-labelledby="navbarDropdown">
+             <!-- <li><a class="dropdown-item" href="#"><i class="fas fa-mobile-alt"></i> Phones</a></li>
+             <li><a class="dropdown-item" (click)="navigateToCategory('laptop')"><i class="fas fa-laptop"></i> Laptop</a></li>
+             <li><a class="dropdown-item" href="#"><i class="fas fa-desktop"></i> Monitor</a></li> -->
+
+             <li><a class="dropdown-item"  (click)="navigateToCategory('phones')"><i class="fas fa-mobile-alt"></i> Phones</a></li>
+             <li><a class="dropdown-item"  (click)="navigateToCategory('laptop')"><i class="fas fa-laptop"></i> Laptop</a></li>
+             <li><a class="dropdown-item"  (click)="navigateToCategory('monitor')"><i class="fas fa-desktop"></i> Monitor</a></li>
+             <li><a class="dropdown-item"  (click)="navigateToCategory('watches')"><i class="fas fa-clock"></i> Watches</a></li>
+             <li><a class="dropdown-item"  (click)="navigateToCategory('tv')"><i class="fas fa-tv"></i> TV</a></li>
+            <li><a class="dropdown-item"   (click)="navigateToCategory('earbuds')"><i class="fas fa-headphones-alt"></i> Earbuds</a></li>
+  <!-- Add more categories with icons here -->
+             <!-- Add more categories with icons here -->
+           </ul>
+         
+ 
+         <!-- News -->
+         <!-- <li class="nav-item">
+           <a class="nav-link" href="#">News</a>
+         </li> -->
+
+         <li class="nav-item">
+          <a class="nav-link" routerLink="/shownews" routerLinkActive="active">News</a>
+        </li>
+ 
+         <!-- Jet Blogs -->
+         <li class="nav-item">
+           <a class="nav-link" routerLink="/showblogs" routerLinkActive="active">Jet Blogs</a>
+         </li>
+       </ul>
+ 
+       <!-- Search -->
+       <form class="d-flex">
+         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+         <button class="btn btn-outline-success" type="submit"><i class="fas fa-search"></i></button>
+       </form>
+
+
+        <!-- Add to cart -->
+
+     <!-- <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-shopping-cart"></i> 
+        </a>
+      </li>
+    </ul> -->
+
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="badge badge-pill badge-primary">{{ cartItemCount }}</span>
+        </a>
+      </li>
+    </ul>
+ 
+      <!-- Sign in with Font Awesome icon -->
+      <ul class="navbar-nav">
+       <li class="nav-item">
+         <a class="nav-link" href="/login" ><i class="fas fa-sign-in-alt"></i> Sign In</a>
+       </li>
+     </ul>
+
+
+    
+
+     </div>
+      
+   </div>
+ </nav>
+

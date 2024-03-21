@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "tech-jet": {
+      "hosting": {
+        "techjet": [
+          "tech-jet"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "tech-jet"
+  }
+}

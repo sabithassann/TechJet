@@ -1,0 +1,23 @@
+
+
+
+<div class="featured-products container-fluid"> <!-- Adding 'container-fluid' class -->
+    <div class="row">
+        <div class="col-md-2" *ngFor="let product of trendingProducts">
+            <div class="product">
+                <a [routerLink]="['/product', product.id]">
+                    <img [src]="product.imageUrl" alt="{{ product.name }}">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.price }}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+    
+  
+  
+  
+  
+  

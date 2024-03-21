@@ -1,0 +1,44 @@
+
+
+<!-- <h2>Product Details</h2>
+<p>ID: {{ productId }}</p>
+
+<div *ngIf="product">
+  <h3>{{ product.name }}</h3>
+  <p>Price: {{ product.price }}</p>
+  <img [src]="product.imageUrl" alt="{{ product.name }}">
+ 
+</div> -->
+
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Image on the left -->
+            <img [src]="product?.imageUrl" alt="{{ product?.name }}">
+        </div>
+        <div class="col-md-6">
+            <!-- Product information on the right -->
+            <h3>{{ product?.name }}</h3>
+            <p>Price: {{ product?.price }}</p>
+            
+        
+            <p>View More Info</p>
+            <h4>Payment Options</h4>
+            
+            <div>
+              <label for="quantity">Quantity:</label>
+              <input type="number" name="quantity" id="quantity" value="1" min="1" placeholder="1" aria-labelledby="cart-quantity">
+              <button class="btn btn-primary" >Add to Cart</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  
+  
+  
+  
+  
+  
+  
+  

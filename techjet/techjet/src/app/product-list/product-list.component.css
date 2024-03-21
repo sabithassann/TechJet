@@ -1,0 +1,38 @@
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product img {
+    max-width: 100%;
+  }
+  
+  .product a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Change the text color */
+  }
+
+
+  .product-name {
+    font-size: 14px;
+  }
+  
+  .product-detail {
+    font-size: 13px;
+  }
+
+  .product-price {
+    font-size: 17px;
+    color: #ef4a23;
+    font-weight: 600;
+    line-height: 22px;
+  }
+
+  .currency {
+    font-size: 20px;
+    color:  #ef4a23;
+    font-weight: 600;
+    line-height: 22px;
+  }

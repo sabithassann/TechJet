@@ -1,0 +1,41 @@
+<!-- <div class="container mt-4">
+  <h2>Blogs Articles</h2>
+
+  <div class="row">
+    <ng-container *ngFor="let article of blogsArticles" class="col-md-4 mb-4">
+      <div class="card" (click)="showBlogsArticleDetail(article)">
+        <img [src]="article.imageUrl" alt="{{ article.articleTitle }}" class="card-img-top img-fluid" style="max-height: 300px; object-fit: cover;">
+        <div class="card-body">
+          <h5 class="card-title">{{ article.articleTitle }}</h5>
+          <p class="card-text" style="font-size: 14px;">{{ article.shortDescription }}</p>
+          <p class="card-text" style="font-size: 12px;">
+            <small class="text-muted">Author: {{ article.author }} | Date: {{ formatDate(article.date) }}</small>
+          </p>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div> -->
+
+<div class="container mt-4">
+  <h2>Blogs Articles</h2>
+
+  <div class="row">
+    <div class="col-md-8 offset-md-2">
+      <div class="row">
+        <div *ngFor="let article of blogsArticles" class="col-md-6 mb-4">
+          <div class="card" (click)="showBlogsArticleDetail(article)">
+            <img [src]="article.imageUrl" alt="{{ article.articleTitle }}" class="card-img-top img-fluid" style="max-height: 200px; object-fit: cover;">
+            <div class="card-body">
+              <h5 class="card-title">{{ article.articleTitle }}</h5>
+              <p class="card-text" style="font-size: 14px;">{{ article.shortDescription }}</p>
+              <p class="card-text" style="font-size: 12px;">
+                <small class="text-muted">Author: {{ article.author }} | Date: {{ formatDate(article.date) }}</small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

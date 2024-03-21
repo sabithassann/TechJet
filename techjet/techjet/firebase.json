@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "techjet",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "asia-east1"
+      }
+    }
+  ]
+}

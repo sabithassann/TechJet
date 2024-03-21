@@ -1,0 +1,61 @@
+.navbar {
+    background-color:#f2f2f2!important;;
+  }
+
+  .nav-item .nav-link {
+    /* background-color: #198754; */
+    color: black; /* Set the text color to white */
+    transition: color 0.2s;
+    font-size: 17px;
+
+  }
+
+  .nav-item .nav-link:hover {
+    color: #198754; /* Change text color on hover to #198754 */
+  }
+
+  .custom-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .custom-search form {
+    display: flex;
+    align-items: center;
+    margin-right: 10px; /* Adjust the margin between input and button */
+  }
+
+
+  /* Custom CSS for categories */
+
+/* For larger screens */
+.category-section .container .row .col-md-2 {
+    /* Adjust the width and styles for the columns containing categories */
+    width: 10%; /* Set the width to accommodate 10 columns in a row */
+    display: inline-block; /* Display as inline blocks to fit in a line */
+    /* Add other necessary styles */
+  }
+  
+  /* For smaller screens (mobile) */
+  @media (max-width: 767px) {
+    .category-section .container .row .col-md-2 {
+        width: 25%; /* Adjust width for smaller screens, allowing two items per row */
+    }
+  }
+  
+  /* Ensure images are visible on mobile */
+  .category-row .d-flex.flex-column.align-items-center a img {
+    /* Adjust image styles */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .category-row .d-flex.flex-column.align-items-center a.text-center {
+    /* Adjust text styles */
+    text-decoration: none;
+    display: block;
+    /* Add other necessary styles */
+  }

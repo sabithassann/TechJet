@@ -1,0 +1,73 @@
+
+  /* Custom CSS for categories */
+
+/* For larger screens */
+.category-section .container .row .col-md-2 {
+    /* Adjust the width and styles for the columns containing categories */
+    width: 10%; /* Set the width to accommodate 10 columns in a row */
+    display: inline-block; /* Display as inline blocks to fit in a line */
+    /* Add other necessary styles */
+  }
+  
+  /* For smaller screens (mobile) */
+  @media (max-width: 767px) {
+    .category-section .container .row .col-md-2 {
+        width: 25%; /* Adjust width for smaller screens, allowing two items per row */
+    }
+  }
+  
+  /* Ensure images are visible on mobile */
+  .category-row .d-flex.flex-column.align-items-center a img {
+    /* Adjust image styles */
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .category-row .d-flex.flex-column.align-items-center a.text-center {
+    /* Adjust text styles */
+    text-decoration: none;
+    display: block;
+    /* Add other necessary styles */
+  }
+  
+  
+  /* Basic styling for the provided HTML structure */
+  
+  /* Style for the 'Top Categories' section */
+  .category-section {
+    background-color: #f9f9f9;
+    padding: 20px;
+  }
+  
+  .home-header-text {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .see-all-link {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .see-all-link:hover {
+    text-decoration: underline;
+  }
+  
+  .home-header-line {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+  }
+  
+  
+  .see-all-link {
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .see-all-link:hover {
+    text-decoration: none;
+  }
+  

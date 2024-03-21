@@ -1,0 +1,14 @@
+<div class="container mt-4">
+    <h2>Article Detail</h2>
+  
+    <div class="card">
+      <img [src]="article.imageUrl" alt="{{ article.articleTitle }}" class="card-img-top img-fluid">
+      <div class="card-body">
+        <!-- Display article details here -->
+        <h5 class="card-title">{{ article.articleTitle }}</h5>
+        <p class="card-text">Author: {{ article.author }}</p>
+        <p class="card-text">Date: {{ formatDate(article.date) }}</p>
+        <p class="card-text">{{ article.fullArticle }}</p>
+      </div>
+    </div>
+  </div>

@@ -1,0 +1,41 @@
+<!-- <h2>Products</h2>
+<ul>
+  <li *ngFor="let product of products">
+    {{ product.name }} - {{ product.price }}
+  </li>
+</ul> -->
+
+
+<!-- <div class="featured-products container-fluid"> 
+    <div class="row">
+        <div class="col-md-2" *ngFor="let product of products">
+            <div class="product">
+               
+                    <img [src]="product.imageUrl" alt="{{ product.name }}">
+                    <h3>{{ product.name }}</h3>
+                    <p>{{ product.price }}</p>
+                
+            </div>
+        </div>
+    </div>
+  </div> -->
+
+  <div class="container mt-4">
+  <div class="featured-products container-fluid">
+    <div class="row">
+      <div class="col-md-2" *ngFor="let product of products">
+        <div class="product">
+          <img [src]="product.imageUrl" alt="{{ product.name }}">
+          <h3 class="product-name">{{ product.name }}</h3>
+          <p class="product-detail">Processor: {{ product.processor }}</p>
+          <p class="product-detail">RAM: {{ product.RAM }}</p>
+          <p class="product-detail">Display: {{ product.display }}</p>
+          <p class="product-detail">Feature: {{ product.feature }}</p>
+          <p class="product-price"><span class="currency">৳</span>{{ product.price }}</p>
+          <button class="btn btn-primary" (click)="buyNow(product.id)">Buy Now</button> <!-- Update this line -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div>

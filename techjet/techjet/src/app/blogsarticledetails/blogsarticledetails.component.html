@@ -1,0 +1,46 @@
+
+<!-- 
+  <div class="container mt-4">
+    <h2>Article Detail</h2>
+  
+    <div class="card">
+      <img [src]="article.imageUrl" alt="{{ article.articleTitle }}" class="card-img-top img-fluid article-image">
+      <div class="card-body">
+        
+        <h5 class="card-title article-title">{{ article.articleTitle }}</h5>
+        <p class="card-text article-details">Author: {{ article.author }}</p>
+        <p class="card-text article-details">Date: {{ formatDate(article.date) }}</p>
+        <p class="card-text article-full">{{ article.fullArticle }}</p>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <div class="container mt-4">
+    <h2>Article Detail</h2>
+  
+    <div class="card">
+      <img [src]="article.imageUrl" alt="{{ article.articleTitle }}" class="card-img-top img-fluid article-image">
+      <div class="card-body">
+        <!-- Display article details here -->
+        <h5 class="card-title article-title">{{ article.articleTitle }}</h5>
+        <p class="card-text article-details">Author: {{ article.author }}</p>
+        <p class="card-text article-details">Date: {{ formatDate(article.date) }}</p>
+        <p class="card-text article-full">{{ article.fullArticle }}</p>
+  
+        <!-- Font Awesome share buttons -->
+        <div class="share-buttons mt-3">
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://yourwebsite.com" target="_blank" rel="noopener" title="Share on Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://twitter.com/intent/tweet?url=https://yourwebsite.com&amp;text=Check out this article" target="_blank" rel="noopener" title="Share on Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send?text=Check out this article: https://yourwebsite.com" target="_blank" rel="noopener" title="Share on WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>

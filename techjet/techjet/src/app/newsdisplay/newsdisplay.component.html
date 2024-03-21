@@ -1,0 +1,49 @@
+<!-- <div class="container mt-4">
+    <h2>News Articles</h2>
+  
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="list-group">
+          <div *ngFor="let article of newsArticles" class="list-group-item">
+            <div class="d-flex w-100 justify-content-between align-items-center">
+              <h5 class="mb-1">{{ article.articleTitle }}</h5>
+              <small>{{ article.date }}</small>
+            </div>
+            <div class="d-flex align-items-center mb-2">
+              <img [src]="article.imageUrl" alt="{{ article.articleTitle }}" class="img-fluid mr-3" style="max-width: 100px;">
+              <p class="mb-1">{{ article.shortDescription }}</p>
+            </div>
+            <small>Author: {{ article.author }}</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+  <div class="container mt-4">
+    <h2>Blogs Articles</h2>
+  
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <div class="row">
+          <div *ngFor="let article of newsArticles" class="col-md-6 mb-4">
+            <div class="card" (click)="showArticleDetail(article)">
+              <img [src]="article.imageUrl" alt="{{ article.articleTitle }}" class="card-img-top img-fluid" style="max-height: 200px; object-fit: cover;">
+              <div class="card-body">
+                <h5 class="card-title">{{ article.articleTitle }}</h5>
+                <p class="card-text" style="font-size: 14px;">{{ article.shortDescription }}</p>
+                <p class="card-text" style="font-size: 12px;">
+                  <small class="text-muted">Author: {{ article.author }} | Date: {{ formatDate(article.date) }}</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+

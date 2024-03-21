@@ -1,0 +1,18 @@
+<div class="container mt-4">
+    <h2>Products by {{ brand }}</h2>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let product of products">
+        <div class="product">
+          <img [src]="product.imageUrl" alt="{{ product.name }}">
+          <h3 class="product-name">{{ product.name }}</h3>
+          <!-- Display other product details -->
+          <p class="product-detail">Processor: {{ product.processor }}</p>
+          <p class="product-detail">RAM: {{ product.RAM }}</p>
+          <p class="product-detail">Display: {{ product.display }}</p>
+          <p class="product-detail">Feature: {{ product.feature }}</p>
+          <p class="product-price"><span class="currency">৳</span>{{ product.price }}</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>

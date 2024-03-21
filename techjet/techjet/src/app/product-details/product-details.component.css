@@ -1,0 +1,63 @@
+.product-details {
+    /* Add styling specific to your product details page layout */
+    /* For example: */
+    margin: 20px;
+  }
+
+
+  /* Assuming a class named ".product-details" for the container */
+.product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+/* Styling for the left section containing the image */
+.product-details .product-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Styling for the right section containing the product information */
+.product-details .product-info {
+  flex: 2;
+}
+
+/* Styling for the product title */
+.product-details .product-info h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+/* Styling for the product price */
+.product-details .product-info p {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+/* Styling for the description */
+.product-details .product-info .description {
+  margin-bottom: 15px;
+}
+
+/* Styling for other details (regularPrice, status, etc.) */
+.product-details .product-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-details .product-info ul li {
+  margin-bottom: 8px;
+}
+
+/* Styling for the image */
+.product-details .product-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}

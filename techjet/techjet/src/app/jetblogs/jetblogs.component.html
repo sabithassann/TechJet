@@ -1,0 +1,57 @@
+<div class="container mt-4">
+
+<h1>Add Blogs</h1>
+
+<form (ngSubmit)="onSubmitBlogs()">
+    <div class="form-group">
+      <label for="articleTitle">Article Title</label>
+      <input type="text" class="form-control" id="articleTitle" name="articleTitle" placeholder="Article Title" [(ngModel)]="articleTitle">
+    </div>
+  
+    <div class="form-group">
+      <label for="author">Author</label>
+      <input type="text" class="form-control" id="author" name="author" placeholder="Author" [(ngModel)]="author">
+    </div>
+  
+    <!-- <div class="form-group">
+      <label for="date">Date</label>
+      <input type="text" class="form-control" id="date" name="date" placeholder="Date" [(ngModel)]="date">
+    </div> -->
+    <div class="form-group">
+        <label for="date">Date</label>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date" [(ngModel)]="date" name="date">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </div>
+
+  
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select class="form-control" id="category" name="category" [(ngModel)]="category">
+        <option value="buying_guide">Buying Guide</option>
+        <option value="product_review">Product Review</option>
+        <option value="tips">Tips</option>
+        <option value="technology">Technology</option>
+        <option value="Interview">Cyber</option>
+      </select>
+    </div>
+  
+    <div class="form-group">
+      <label for="shortDescription">Short Description</label>
+      <textarea class="form-control" id="shortDescription" name="shortDescription" placeholder="Short Description" [(ngModel)]="shortDescription"></textarea>
+    </div>
+  
+    <div class="form-group">
+      <label for="fullArticle">Full Article</label>
+      <textarea class="form-control" id="fullArticle" name="fullArticle" placeholder="Full Article" [(ngModel)]="fullArticle"></textarea>
+    </div>
+  
+    <div class="form-group">
+      <label for="image">Image Upload</label>
+      <input type="file" class="form-control-file" (change)="onFileSelected($event)">
+    </div>
+  
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  
+</div>

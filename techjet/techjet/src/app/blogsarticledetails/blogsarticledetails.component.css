@@ -1,0 +1,35 @@
+.article-image {
+    max-width: 60%;
+    height: auto;
+  }
+  
+  .article-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .article-details {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .article-full {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+
+
+  .share-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  .share-buttons a {
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+  }
+  .share-buttons a:hover {
+    color: #4267B2; /* Adjust hover color for Facebook */
+  }

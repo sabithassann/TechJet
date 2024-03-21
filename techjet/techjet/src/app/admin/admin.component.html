@@ -1,0 +1,54 @@
+
+<div class="container mt-4">
+<div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 bg-dark text-light py-4">
+        <h4 class="text-center">Admin Panel</h4>
+        <ul class="list-group">
+          <li class="list-group-item bg-dark border-0">
+            <button class="btn btn-block btn-primary text-left" (click)="showBlogForm()">
+              <i class="fa fa-file-text-o mr-2"></i> Add Blog
+            </button>
+          </li>
+          <li class="list-group-item bg-dark border-0">
+            <button class="btn btn-block btn-primary text-left" (click)="showNewsForm()">
+              <i class="fa fa-newspaper-o mr-2"></i> Add News
+            </button>
+          </li>
+          <li class="list-group-item bg-dark border-0">
+            <button class="btn btn-block btn-primary text-left" (click)="showProductForm()">
+              <i class="fa fa-shopping-cart mr-2"></i> Add Product
+            </button>
+          </li>
+
+
+          <li class="list-group-item bg-dark border-0">
+            <button class="btn btn-block btn-primary text-left" (click)="showModifyForm()">
+              <i class="fa fa-newspaper-o mr-2"></i> Update/Delete
+            </button>
+          </li>
+          <!-- Add other sidebar options as needed -->
+        </ul>
+      </div>
+  
+      <!-- Right side for form -->
+      <div class="col-md-9 py-4">
+        <div *ngIf="showBlog" class="container">
+          <app-jetblogs></app-jetblogs>
+        </div>
+        <div *ngIf="showNews" class="container">
+          <app-news></app-news>
+        </div>
+        <div *ngIf="showProduct" class="container">
+          <app-product-form></app-product-form>
+        </div>
+
+        <div *ngIf="showModify" class="container">
+          <app-modify></app-modify>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

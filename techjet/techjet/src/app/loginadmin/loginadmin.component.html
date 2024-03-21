@@ -1,0 +1,22 @@
+
+
+
+  <div class="container">
+    <div class="login-container mat-elevation-z2"> <!-- Apply Material elevation -->
+      <h2 class="login-title">Login Page</h2>
+      <form (ngSubmit)="login()" class="mat-typography login-form">
+        <mat-form-field appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput type="text" name="username" [(ngModel)]="username">
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput type="password" name="password" [(ngModel)]="password">
+        </mat-form-field>
+        <!-- <button mat-raised-button color="primary" type="submit">Login</button> -->
+
+        <button type="submit" class="btn btn-primary">Login</button>
+
+      </form>
+    </div>
+  </div>

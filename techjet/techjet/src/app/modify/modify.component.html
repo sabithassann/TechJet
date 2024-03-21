@@ -1,0 +1,86 @@
+
+<div class="container mt-4">
+
+  <div class="container mt-2">
+<div class="container">
+    <div class="search-container">
+      <!-- Input for model number -->
+      <input type="text" [(ngModel)]="searchModel" placeholder="Enter Model Number">
+      <!-- Search button -->
+      <button class="search-button" (click)="onSearch()">Search</button>
+    </div>
+    
+    <!-- Display retrieved data -->
+    <div *ngIf="retrievedProduct" class="product-details">
+      <h3>Retrieved Product:</h3>
+      <div class="product-info">
+        <div class="product-image">
+          <img [src]="retrievedProduct.imageUrl" alt="Product Image">
+        </div>
+        <div class="product-description">
+          <p><strong>Model:</strong> {{ retrievedProduct.model }}</p>
+          <p><strong>Name:</strong> {{ retrievedProduct.name }}</p>
+          <!-- Display other fields as needed -->
+        </div>
+      </div>
+    
+      <!-- Options for delete and update -->
+      <div class="options">
+        <button class="delete-button" (click)="onDelete()">Delete</button>
+        <button class="update-button" (click)="onUpdate()">Update</button>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+ <!-- Section for fetching news articles by date range -->
+
+ 
+ <div class="container mt-2">
+
+   <div>
+    <h2>Fetch News by Date Range</h2>
+    <form #newsForm="ngForm">
+      <mat-form-field>
+        <input matInput [matDatepicker]="startPicker" placeholder="Start Date" name="startDate" [(ngModel)]="startDate" ngModel #startDateNgModel="ngModel">
+        <mat-datepicker-toggle matSuffix [for]="startPicker"></mat-datepicker-toggle>
+        <mat-datepicker #startPicker></mat-datepicker>
+      </mat-form-field>
+  
+      <mat-form-field>
+        <input matInput [matDatepicker]="endPicker" placeholder="End Date" name="endDate" [(ngModel)]="endDate" ngModel #endDateNgModel="ngModel">
+        <mat-datepicker-toggle matSuffix [for]="endPicker"></mat-datepicker-toggle>
+        <mat-datepicker #endPicker></mat-datepicker>
+      </mat-form-field>
+  
+      <button mat-raised-button color="primary" (click)="searchNewsByDateRange()">Search</button>
+    </form>
+  
+
+
+
+  <div *ngIf="newsArticles.length > 0">
+    <h3>News Articles</h3>
+    <div *ngFor="let article of newsArticles">
+      <div class="news-article">
+        <img [src]="article.imageUrl" alt="News Image" class="article-image-small">
+        <div class="article-details">
+          <h4>{{ article.articleTitle }}</h4>
+          <p>Author: {{ article.author }}</p>
+          <p>Date: {{ article.date }}</p>
+        </div>
+        <div class="article-options">
+          <button class="delete-button" (click)="onDeleteArticle(article.id)">Delete</button>
+          <button class="update-button" (click)="onUpdateArticle(article.id)">Update</button>
+        </div>
+      </div>
+      <hr>
+    </div>
+  </div>
+
+</div>
+
+</div>
+  

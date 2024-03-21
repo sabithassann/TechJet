@@ -1,0 +1,19 @@
+.existing-container {
+    display: flex;
+    justify-content: flex-end; /* Aligns contents to the right */
+  }
+  
+  .fixed-message-icon {
+    position: fixed;
+    bottom: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 999; /* Set a higher value if needed */
+  }
+  
+  
+  .chat-text {
+    display: block;
+    font-size: 16px; /* Adjust as needed */
+    margin-top: 5px; /* Adjust as needed */
+    color: rgb(16, 16, 16);
+  }
