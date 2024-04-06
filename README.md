@@ -1,12 +1,51 @@
 # TechJet
  E-commerce, Blog, and News Platform using Angular and Firebase
 
- :pushpin: Home Page:
-Implement secure user authentication and authorization mechanisms to control access to sensitive features and data, ensuring data integrity and confidentiality.
+ # E-commerce, Blog, and News Platform
+A comprehensive e-commerce, blogging, and news platform using Angular framework, Firebase Firestore database, and Firebase Storage. Implemented features including blog/news posting, product management, and secure authentication via Firebase Authentication.
+
+-----------------   ---------------------------------------------
+## Features
+
+- E-commerce functionality:  like browse, add items to cart, and proceed to checkout.
+- Blog and news posting capabilities
+- Secure authentication system using firebase Authentication.
+- Responsive Design
+- Product Management: Addition, listing, editing, and deletion of products etc.
+
+
+
+
+## Technologies used:-
+
+<p align="left">
+    <img src="https://angular.io/assets/images/logos/angular/angular.svg" alt="angular" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>
+<img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/>
+
+<img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/>
+
+
+
+</p>
+
+
+
+
+**==== Software And Tools Required ======**
+- :  FireBase FireStore Database
+- :  FireBase Authentication
+- :  Angular 17
+- :  Visual Studio Code
+- :  TypeScript
+
+
+ :pushpin: Home Page 1:
 
 ![ Home page](https://github.com/sabithassann/TechJet/blob/main/techjet_screenshot/home_1.png)
 
-:pushpin: Home Page:
+:pushpin: Home Page 2:
 ![ Home page](https://github.com/sabithassann/TechJet/blob/main/techjet_screenshot/home_2.png)
 
 :pushpin: Category Page:
